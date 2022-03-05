@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans 'Profile' %}{% endblock %}
+{% block content %}
+    {% if request.user.is_authenticated %}
+    <h1>{% trans 'Welcome' %} {{ request.user.username }}</h1>
+    <p><a href="/update_account">{% trans 'Update account' %}</a></p>
+    <p><a href="/logout">{% trans 'Logout' %}</a></p>
+    <h2><a href="/shops/page_with_cached_fragments">{% trans 'Please put to see shops list' %}</a></h2>
+    <h2><a href="/orders/create/">{% trans 'Orders create' %}</a></h2>
+    <h2><a href="/orders/detail/">{% trans 'Orders detail' %}</a></h2>
+    <h2><a href="/cart">{% trans 'Your cart' %}</a></h2>
+    {% if request.user.avatar %}
+        <p>
+        <img src="{{ request.user.avatar.url }}" alt="Smiley face" width="250" height="250">
+        </p>
+    {% else %}
+        <p>{% trans 'Avatar is not downloaded' %}</p>
+    {% endif %}
+    {% else %}
+    <p>{% trans 'You are not authorized on this site.' %}</p>
+    <p><a href="/login">{% trans 'Log in' %}</a></p>
+    <p><a href="/register">{% trans 'Register' %}</a></p>
+{% endif %}
+
+{% endblock %}

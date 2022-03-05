@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans 'Profile editing' %}{% endblock %}
+{% block content %}
+<h3>{% trans 'Edit user profile for ' %} {{ profile.user.username }}</h3>
+    <form method = "post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans 'Edit profile' %}</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% load i18n %}
+{% load cache %}
+{% cache 500 order %}
+    {% block admin_order_detail %}
+        {% for item in order.all %}
+
+        <li>
+            <p>{% trans 'Email: ' %}{{ item.email }}</p>
+            <p>{% trans 'Coupon: ' %}{{ item.coupon }}</p>
+            <p>{% trans 'Discount: ' %}{{ item.discount }}</p>
+        </li>
+        {% endfor %}
+{% endblock %}
+{% endcache %}
+

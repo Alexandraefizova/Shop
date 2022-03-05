@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-16 08:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: app_shops/models.py:8
+msgid "name"
+msgstr "имя"
+
+#: app_shops/models.py:13 app_shops/models.py:19
+msgid "product"
+msgstr "продукт"
+
+#: app_shops/models.py:15
+msgid "price"
+msgstr "цена"
+
+#: app_shops/models.py:18
+msgid "products"
+msgstr "продукты"
+
+#: app_users/apps.py:7
+msgid "users"
+msgstr "пользователи"
+
+#: templates/base.html:8
+msgid "Our translation page title."
+msgstr "Ваша страница для перевода"
+
+#: templates/base.html:24
+msgid "Go"
+msgstr "Перейти"
+
+#: templates/base.html:29
+msgid "Translated text."
+msgstr "Перевести текст"
+
+#: templates/base.html:43
+msgid "Welcome to our page"
+msgstr "Добро пожаловать на нашу страницу"
+
+#: templates/orders/order/detail.html:6
+msgid "Email: "
+msgstr "Мэйл: "
+
+#: templates/orders/order/detail.html:7
+msgid "Coupon: "
+msgstr "Купон: "
+
+#: templates/orders/order/detail.html:8
+msgid "Discount: "
+msgstr "Скидка: "
+
+#: templates/shops/product_list.html:13
+msgid "Price "
+msgstr "Цена "
+
+#: templates/shops/product_list.html:16 templates/users/account.html:21
+msgid "You are not authorized on this site."
+msgstr "Вы не авторизованы на сайте."
+
+#: templates/users/account.html:3
+msgid "Profile"
+msgstr "Профиль"
+
+#: templates/users/account.html:6
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: templates/users/account.html:7
+msgid "Update account"
+msgstr "Обновить аккаунт"
+
+#: templates/users/account.html:8
+msgid "Logout"
+msgstr "Выйти"
+
+#: templates/users/account.html:9
+msgid "Please put to see shops list"
+msgstr "Пожалуйста, нажмите для просмотра списка магазинов"
+
+#: templates/users/account.html:10
+msgid "Orders create"
+msgstr "Создать заказ"
+
+#: templates/users/account.html:11
+msgid "Orders detail"
+msgstr "Детали заказа"
+
+#: templates/users/account.html:12
+msgid "Your cart"
+msgstr "Ваша корзина"
+
+#: templates/users/account.html:18
+msgid "Avatar is not downloaded"
+msgstr "Аватар не загружен"
+
+#: templates/users/account.html:22 templates/users/login.html:9
+msgid "Log in"
+msgstr "Войти"
+
+#: templates/users/account.html:23
+msgid "Register"
+msgstr "Регистрация"
+
+#: templates/users/edit_account.html:3
+msgid "Profile editing"
+msgstr "Редаткирование профиля"
+
+#: templates/users/edit_account.html:5
+msgid "Edit user profile for "
+msgstr "Редактировать профиль пользователя для "
+
+#: templates/users/edit_account.html:9
+msgid "Edit profile"
+msgstr "Редаткирование профиля"
+
+#: templates/users/login.html:3
+msgid "Page"
+msgstr "Страница"
+
+#: templates/users/login.html:5
+msgid "Log in page"
+msgstr "Страница входа в систему"
+
+#: templates/users/logout.html:3
+msgid "Title"
+msgstr "Заголовок"
+
+#: templates/users/logout.html:5
+msgid "Log out"
+msgstr "Выход"
+
+#: templates/users/logout.html:6
+msgid "You are successfully logged out!"
+msgstr "Вы успешно вышли из учетной записи!"
+
+#: templates/users/register.html:3 templates/users/register.html:5
+msgid "Registration"
+msgstr "Регистрация"
+
+#: templates/users/register.html:9
+msgid "Sign in"
+msgstr "Регистрироваться"
+
+#: templates/users/restore_password.html:3
+msgid "Password reset"
+msgstr "Сброс пароля"
+
+#: templates/users/restore_password.html:8
+msgid "Reset password"
+msgstr "Сброс пароля"

@@ -1,0 +1,15 @@
+{% load i18n %}
+{% load cache %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+{% cache 600 welcome LANGUAGE_CODE %}
+{% trans "Welcome" %}
+    {% block shop_list %}
+        {% for item in shops.all %}
+        <li>
+            <p>{{ item.name }}</p>
+        </li>
+        {% endfor %}
+    {% endblock %}
+{% endcache %}
